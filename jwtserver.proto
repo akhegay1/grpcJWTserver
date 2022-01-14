@@ -1,0 +1,27 @@
+syntax = "proto3";
+package jwtserver;
+option go_package = "/jwtserver";
+
+message Reqtoken {
+  string user = 2;
+}
+
+message CheckAuth {
+  string tokenString = 2;
+}
+
+message Tokenstring {
+  string tokenString = 1;
+}
+
+message AuthRslt {
+  bool tokenvalid = 1;
+  string user = 2;
+}
+
+
+
+service JwtServerService {
+  rpc GetToken(Reqtoken) returns (Tokenstring) {}
+  rpc CheckToken(CheckAuth) returns (AuthRslt) {}
+}

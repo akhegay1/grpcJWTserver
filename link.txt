@@ -1,0 +1,2 @@
+https://www.youtube.com/watch?v=BdzYdN_Zd9Q
+https://tutorialedge.net/golang/go-grpc-beginners-tutorial/
